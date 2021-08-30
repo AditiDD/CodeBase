@@ -1,0 +1,67 @@
+<h1>Inside Demo component</h1>
+
+<h1>Use of ngIf</h1>
+<h1 *ngIf ="flag">flag is true :: {{batches[0]}}</h1> 
+<h1 *ngIf="batches.length>0"> batch-length is greater than 0 ::{{batches}}</h1>
+
+<h1>Use of themplate ref variable</h1>
+<h1 *ngIf="false;else otherpart">true flag :: {{batches[0]}}</h1>
+<ng-template #otherpart>
+    <h1>The otherpart :: {{batches[1]}}</h1>
+     
+</ng-template>
+
+<h1>If-true-then-else-part-via-template-ref-variable</h1>
+
+<h1 *ngIf="flag ;then truepart else falsepart"></h1>
+<ng-template #truepart>
+    <h1>truepart :: {{batches[0]}}</h1>
+</ng-template>
+<ng-template #falsepart>
+    <h1>falsepart :: {{batches[1]}}</h1>
+</ng-template>
+
+<h1>use of ngFor :: iterate batches</h1>
+<h1 *ngFor="let value of batches">{{value}}</h1>
+
+<h1>use of ngFor :: iterate batches with index</h1>
+<h1 *ngFor="let value of batches index as i">{{i}}::{{value}}</h1>
+
+
+<h1> Use of switch-case </h1>
+
+<div [ngSwitch]="batches[0]">
+
+
+    <div *ngSwitchCase="'PPA'">You have selected PPA</div>
+</div>
+
+<h1>loop with condition</h1>
+<div *ngFor="let value of batches">
+    
+    <div *ngIf="value;else elseparthere" >You have selected PPA</div>
+    <ng-template #elseparthere>
+        PPA1 is not present
+    </ng-template>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
