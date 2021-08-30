@@ -1,0 +1,21 @@
+Structural directive is a concept where we ,Change the DOM structure,
+by adding or removing elements.
+
+These are structual directive in angualr
+1.ngIf
+2.ngIfElse
+3.ngFor
+4.ngForIndex
+5.ngSwitch
+
+///////////////////////////////////////////////////////////
+create on array in service and manipluate it via strcutural directive:
+
+1.If test cse :: If batch name is :: PPA --->display duration and fees,else 
+disply msg "batch not found"
+
+2.ngFor :: iterate batch with condition of fees more than 5k
+
+3.ngswitch :: Display Batch data on selecting batch_button.
+
+///////////////////////////////////////////////////////////////
