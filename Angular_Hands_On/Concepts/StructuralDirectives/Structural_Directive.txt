@@ -19,3 +19,5 @@ disply msg "batch not found"
 3.ngswitch :: Display Batch data on selecting batch_button.
 
 ///////////////////////////////////////////////////////////////
+
+*Directive is basically adding functionality to html
